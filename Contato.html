@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <table>
+            <tr>
+                <td><img width="100px" src="IFSP_Logo.jpg" alt=""></td>
+                <td><a href="principal.html">Principal</a></td>
+                <td><a href="Historia.html">Historia</a></td>
+                <td><a href="Professores.html">Professores</a></td>
+                <td><a href="Contato.html">Contato</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <h1>Telefone principal</h1>
+        <span>(16) 3303-2330</span>
+        <h1>Para ligar diretamente nos ramais</h1>
+        <span> (16) 3303-XXXX</span>
+        <br>
+        <h1>Ou faça esse formulario a baixo para enviar a duvida</h1>
+        <form action="PaginaAoEnviar.html">
+            <fieldset>
+                <legend>Formulario</legend>
+                <div class="row">
+                    <label for="Nome">Nome:</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label for="Telefoe">Telefoe:</label>
+                    <input type="text" name="tel" id="tel"  pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$" title="(16) 91234-5678">
+                </div>
+                <div class="row">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email">
+                </div>
+                <div class="row">
+                    <label for="Assunto">Assunto:</label>
+                    <textarea name="Assunto" id="Assunto" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <div class="row">
+                    <button>Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <footer>Site da instituição: <a href="https://www.arq.ifsp.edu.br/">https://www.arq.ifsp.edu.br/</a></footer>
+</body>
+</html>
